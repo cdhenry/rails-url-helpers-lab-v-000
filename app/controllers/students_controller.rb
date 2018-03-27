@@ -12,6 +12,7 @@ class StudentsController < ApplicationController
     set_student
     @student.active = !@student.active
     @student.save
+    render 'show'
   end
 
   private
