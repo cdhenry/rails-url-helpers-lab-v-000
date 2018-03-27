@@ -9,8 +9,6 @@ class StudentsController < ApplicationController
   end
 
   def activate_student
-    @student.active = !@student.active
-    render "student/#{@student.id}"
   end
 
   private
