@@ -12,7 +12,6 @@ class StudentsController < ApplicationController
     set_student
     @student.active = !@student.active
     binding.pry
-    render 'show'
   end
 
   private
