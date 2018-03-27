@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
     set_student
     @student.active = !@student.active
     @student.save
-    render 'show'
+    redirect_to action: "show", id:@student.id
   end
 
   private
