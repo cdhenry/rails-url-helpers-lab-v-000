@@ -1,3 +1,8 @@
 <form method="POST" action="/student/:id">
-  <input type="radio" name=""
+  
+  <label> Active </label>
+  <input type="radio" name="active" <%='checked' if @student.active%>>
+  <label> Inactive </label>
+  <input type="radio" name="inactive" <%='checked' if !@student.active%>>
+  <input type=submit value="Update Status">
 </form>
