@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
 
   def activate_student
     @student.active = !@student.active
-    binding.pry
+    render '/show'
   end
 
   private
