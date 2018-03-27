@@ -7,5 +7,4 @@ Rails.application.routes.draw do
   # the route, we'll keep it explicit for now and refactor later.
   get "students/:id", to: "students#show"
   get "students/:id/activate", to: "students#show", :as => :activate_student
-  binding.pry
 end
